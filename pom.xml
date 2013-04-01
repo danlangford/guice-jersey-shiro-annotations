@@ -15,7 +15,7 @@
 
 	<dependencies>
 
-		<!-- give me my @WebServlet/@WebFilter annotations -->
+		<!-- give me @Web[Servlet|Filter|Listener] annotations -->
 		<dependency>
 			<groupId>javax.servlet</groupId>
 			<artifactId>javax.servlet-api</artifactId>
@@ -23,11 +23,18 @@
 			<scope>provided</scope>
 		</dependency>
 
-		<!-- the follow will also pull in guice-3.0 -->
+		<!-- this extension pulls in guice 3 -->
 		<dependency>
 			<groupId>com.google.inject.extensions</groupId>
 			<artifactId>guice-servlet</artifactId>
 			<version>3.0</version>
+		</dependency>
+
+		<!-- this contrib pulls in jersey-core -->
+		<dependency>
+			<groupId>com.sun.jersey.contribs</groupId>
+			<artifactId>jersey-guice</artifactId>
+			<version>1.17.1</version>
 		</dependency>
 
 	</dependencies>
