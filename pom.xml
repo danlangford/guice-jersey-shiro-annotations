@@ -14,13 +14,22 @@
 	</properties>
 
 	<dependencies>
-		<!-- JSR-315 Servlet - API -->
+
+		<!-- give me my @WebServlet/@WebFilter annotations -->
 		<dependency>
 			<groupId>javax.servlet</groupId>
 			<artifactId>javax.servlet-api</artifactId>
 			<version>3.0.1</version>
 			<scope>provided</scope>
 		</dependency>
+
+		<!-- the follow will also pull in guice-3.0 -->
+		<dependency>
+			<groupId>com.google.inject.extensions</groupId>
+			<artifactId>guice-servlet</artifactId>
+			<version>3.0</version>
+		</dependency>
+
 	</dependencies>
 
 </project>
